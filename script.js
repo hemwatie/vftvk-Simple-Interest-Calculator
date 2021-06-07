@@ -9,7 +9,6 @@ function compute()
 
     var year = new Date().getFullYear()+parseInt(years);
 
-    object.onchange = updateRate(){"rate_val"};
 }
 
 function  updateRate()
@@ -18,4 +17,3 @@ function  updateRate()
     document.getElementById("rate_val").innerText  = rateval;
     
 }
-        
