@@ -1,18 +1,29 @@
-body {background-color:black; font-family:arial;color:white}
-h1{color:grey;font-family:verdana}
+
+body {background-color:black; font-family:arial;color:white;}
+h1 {color:grey;font-family:verdana}
+
+input,
+output {
+  vertical-align: middle;
+}
 
 .maindiv{
+    align: center;
 
-    align-self: center;
-
-    width: 300px;
-    padding-top: 20px;
-    padding-right: 20px;
-    padding-left: 20px;
-    padding-bottom: 20px;
+    width: 500px;
+    padding: 20px;
 
     border-radius: 25px;
     background-color:white;
     color:black;
 
+}
+
+div.maindiv {
+  text-align: left;
+}
+
+form label {
+  display: inline-block; /* this is important */
+  width: 150px;
 }
