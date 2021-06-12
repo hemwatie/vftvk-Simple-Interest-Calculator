@@ -12,8 +12,8 @@ function compute()
     //Checks that the principal entered is a positive number.
     if(principal<1)
     {
-
-        document.getElementById("result").innerHTML="Enter a positive number";
+        alert("Enter a positive number");
+        document.getElementById("principal").focus();
     }
     else
     {
