@@ -7,23 +7,31 @@ output {
   vertical-align: middle;
 }
 
+
 .maindiv{
     align: center;
-
     width: 500px;
     padding: 20px;
 
     border-radius: 25px;
     background-color:white;
     color:black;
-
 }
 
-div.maindiv {
-  text-align: left;
+
+/* Positions <p> elements to "center" of page, 
+while keeping each <p> element left-aligned with each other */
+.maindiv table{
+  position: relative;
+  left: 15%;
 }
 
-form label {
-  display: inline-block; /* this is important */
+/* Allows resulting <span> element to be aligned with <p> elements */
+.maindiv span2{
+  position: relative;
+  left: 15%;
+}
+
+table {
   width: 150px;
 }

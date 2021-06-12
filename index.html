@@ -8,20 +8,26 @@
     </head>
 
     <body>
+
     <div class  =  "maindiv">
         <h1>Simple Interest Calculator</h1>
 
-
-        <p>Amount <input type="number"  id="principal"></p>  
-
-        <p>Rate <input type="range" id="rate" min="1" max="20"  value="10.25" step="0.25" onchange="updateRate()"> 
+        <table>
+        <tr>
+        <td>Amount</td>
+        <td><input type="number"  id="principal"></td>
+        </tr> 
+        
+        <tr>
+        <td>Rate<input type="range" id="rate" min="1" max="20"  value="10.25" step="0.25" onchange="updateRate()">
         <span  id="rate_val">
             10.25 %
         </span>
-        </p>
-        
+        </td>
+        </tr>
 
-        <p>No. of Years <select name ="No. of Years" id="years"></p>
+        <tr>
+        <td>No. of Years <select name ="No. of Years" id="years">
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
@@ -33,16 +39,27 @@
             <option value="9">9</option>
             <option value="10">10</option>
         </select>
+        </td>
+        </tr>
 
+        <tr>
+        <td><button onclick="compute()"> Compute Interest </button></td>
+        
+        </tr>
+        </table>
+        </br>
+        <span2 id="result">
 
-        <p><button onclick="compute()"> Compute Interest </button></p>
-        <span id="result">
+        </span2>
 
-        </span>
+        </br>
 
+        <footer>
+            &#169; This Calculator belongs to Hemwatie Persaud.
+        </footer>
+
+        
     </div>
+    
 </body>
-    <footer>
-        &#169; This Calculator belongs to Hemwatie Persaud.
-    </footer>
 </html>
