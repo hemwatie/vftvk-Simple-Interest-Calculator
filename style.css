@@ -2,10 +2,7 @@
 body {background-color:black; font-family:arial;color:white;}
 h1 {color:grey;font-family:verdana}
 
-input,
-output {
-  vertical-align: middle;
-}
+input,output{display: inline-block; vertical-align: middle;}
 
 
 .maindiv{
@@ -19,19 +16,20 @@ output {
 }
 
 
-/* Positions <p> elements to "center" of page, 
-while keeping each <p> element left-aligned with each other */
+/* Use <table> to position <div> elements to "center" of page, 
+while keeping each element left-aligned with each other.*/
 .maindiv table{
-  position: relative;
-  left: 15%;
+    position: relative;
+    left: 15%;
 }
 
-/* Allows resulting <span> element to be aligned with <p> elements */
+/* Allows resulting <span> element to be aligned with <div> elements */
 .maindiv span2{
   position: relative;
   left: 15%;
 }
 
-table {
-  width: 150px;
+/* Adds spacing in between each <table> element */
+.maindiv tr{
+    line-height: 1.75;
 }
