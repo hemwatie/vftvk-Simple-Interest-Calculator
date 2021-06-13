@@ -2,6 +2,7 @@
 body {background-color:black; font-family:arial;color:white;}
 h1 {color:grey;font-family:verdana}
 
+/* Vertically aligns text next to slider/input box elements */
 input,output{display: inline-block; vertical-align: middle;}
 
 

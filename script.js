@@ -15,21 +15,16 @@ function compute()
         alert("Enter a positive number");
         document.getElementById("principal").focus();
     }
+
+    //Displays calculated interest, with resulting numbers highlighted.
     else
     {
-    document.getElementById("result").innerHTML=
-    "If you deposit <mark>"
-    +principal+
-    "</mark>,\<br\>at an interest rate of <mark>"
-    +rate+
-    "%</mark>,\<br\>You will receive an amount of <mark>"
-    +interest+
-    "</mark>,\<br\>in the year <mark>"
-    +year+
-    "</mark>,\<br\>";
+    document.getElementById("result").innerHTML= "If you deposit <mark>"+principal+"</mark>,\<br\>at an interest rate of <mark>"+rate+
+    "%</mark>,\<br\>You will receive an amount of <mark>"+interest+"</mark>,\<br\>in the year <mark>"+year+"</mark>,\<br\>";
     }
 }
 
+//Dynamically changes value of Rate by adjusting slider. Stores new value into "rateval";
 function  updateRate()
 {
     var rateval = document.getElementById("rate").value;
